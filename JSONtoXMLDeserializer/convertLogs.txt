@@ -1,0 +1,15 @@
+2022-07-26T12:49:51	Çevirme başarılı.
+2022-07-26T12:50:17	JSON metni XML'e çevrilirken hata oluştu: Invalid property identifier character: {. Path 'node', line 1, position 93.
+   at Newtonsoft.Json.JsonTextReader.ParseProperty()
+   at Newtonsoft.Json.JsonTextReader.ParseObject()
+   at Newtonsoft.Json.Converters.XmlNodeConverter.DeserializeNode(JsonReader reader, IXmlDocument document, XmlNamespaceManager manager, IXmlNode currentNode)
+   at Newtonsoft.Json.Converters.XmlNodeConverter.CreateElement(JsonReader reader, IXmlDocument document, IXmlNode currentNode, String elementName, XmlNamespaceManager manager, String elementPrefix, Dictionary`2 attributeNameValues)
+   at Newtonsoft.Json.Converters.XmlNodeConverter.ReadElement(JsonReader reader, IXmlDocument document, IXmlNode currentNode, String propertyName, XmlNamespaceManager manager)
+   at Newtonsoft.Json.Converters.XmlNodeConverter.ReadJson(JsonReader reader, Type objectType, Object existingValue, JsonSerializer serializer)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.DeserializeConvertable(JsonConverter converter, JsonReader reader, Type objectType, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeXmlNode(String value, String deserializeRootElementName, Boolean writeArrayAttribute, Boolean encodeSpecialCharacters)
+   at JSONtoXMLDeserializer.API.Services.Concrete.JsonToXmlConverter.JsonToXml(String json) in C:\WorkspaceVS\JSONtoXMLDeserializer\JSONtoXMLDeserializer\Services\Concrete\JsonToXmlConverter.cs:line 22
+[2022-07-26T12:51:58]	Çevirme başarılı.
